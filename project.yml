@@ -1,0 +1,21 @@
+
+name: ZipFlow
+options:
+  bundleIdPrefix: com.zipflow
+  deploymentTarget:
+    iOS: "18.0"
+targets:
+  ZipFlow:
+    type: application
+    platform: iOS
+    sources:
+      - ZipFlow
+    info:
+      path: ZipFlow/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zipflow.app
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
